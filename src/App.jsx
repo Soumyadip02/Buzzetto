@@ -5,11 +5,12 @@ import Register from "./components/register";
 import Dashboard from "./components/dashboard";
 import ProtectedRoute from "./components/auth/ProtectedRoute";
 import { AuthProvider } from "./contexts/AuthContext.jsx";
-
+// import AnalyticsTracker from "./components/AnalyticsTracker";
 function App() {
   return (
     <BrowserRouter>
       <AuthProvider>
+        {/* <AnalyticsTracker /> */}
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
